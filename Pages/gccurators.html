@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../assets\home-stylesheet.css">
+        <link href="https://fonts.cdnfonts.com/css/wicked-steam" rel="stylesheet">
+        <link rel="icon" type="image/png" href="../assets/Images/souled.png" style="width: 150%;">       
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+          @import url('https://fonts.cdnfonts.com/css/wicked-steam');
+          body{
+             background-color:black
+          }
+          .curator-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.curator-container h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.curator-container p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.curator-recommendations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.curator-card {
+  width: 30%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.curator-card img {
+ 
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.curator-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.curator-card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.follow-btn {
+  display: block;
+  background: linear-gradient( to right, rgba( 197,230,248,1 ) 168px,rgba( 254,254,255,1 ) 95%);
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+ .follow-btn:hover {
+  color: #2b81a5;
+  text-decoration: none;
+    
+
+
+
+}
+</style>
+
+      </head>
+        
+        <nav class="d-flex navbar navbar-expand-md darkNav navbar-dark">
+            <!-- Toggler/collapsibe Button -->
+            <!-- <span class="d-md-none d-block" style="cursor:pointer" onclick="openNav()"><img width="30px" height="30px" src="https://icon-library.com/images/hamburger-menu-icon-png-white/hamburger-menu-icon-png-white-10.jpg"></span> -->
+
+            <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img width="30px" height="30px" src="https://icon-library.com/images/hamburger-menu-icon-png-white/hamburger-menu-icon-png-white-10.jpg"></a>
+              <div class="overlay-content">
+                <ul class="navbar-nav pl-4 pt-1">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link" href="../pages/home.html" data-toggle="dropdown">
+                        Store
+                      </a>
+                      <div style="background-color:black" class="dropdown-menu">
+                        <a class="menuItem" href="../pages/home.html">Home</a>
+                        <a class="menuItem" href="../pages/discoveryqueue.html">Discovery Queue</a>
+                        <a class="menuItem" href="../pages/wishlist.html">Wishlist</a>
+                        <a class="menuItem" href="../pages/home.html">Points Shop</a>
+                        <a class="menuItem" href="../pages/news.html">News</a>
+                        <a class="menuItem" href="../pages/stats.html">Jersey</a>
+                      </div>
+                    </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../pages/home.html">Support</a>
+                    </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="../pages/home.html">Account</a>
+  
+                    <div style="background-color:black" class="dropdown-menu">
+                      <a class="menuItem" href="../index.html">Login</a>
+                      <a class="menuItem" href="Sign-up.html">Sign Up</a>
+                    </div>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+        <div class="mx-auto bg">
+            <a class="float-left" href="Home.html"><img
+                class="logoBig" src="../assets/Images/souled (1).png" style="width: 150px; position: relative; left: -150px; top: 3px; right: 20px;"></a>
+            
+            <!--Navbar-->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar" style="position: relative; left: 300px;">
+              <ul class="navbar-nav pt-1">
+                <li class="nav-item dropdown">
+                    <a class="nav-link"  data-toggle="dropdown">
+                      Store
+                    </a>
+                    <div style="background-color:black" class="dropdown-menu">
+                      <a class="menuItem" href="../Pages/home.html">Home</a>
+                      <a class="menuItem" href="../pages/discoveryqueue.html">Discovery Queue</a>
+                      <a class="menuItem" href="../pages/wishlist.html">Wishlist</a>
+                      <a class="menuItem" href="../pages/home.html">Points Shop</a>
+                      <a class="menuItem" href="../pages/news.html">News</a>
+                      <a class="menuItem" href="../pages/stats.html">Jersey</a>
+                    </div>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Pages/support.html">Support</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" >Account</a>
+
+                  <div style="background-color:black" class="dropdown-menu">
+                    <a class="menuItem" href="../index.html">Login</a>
+                    <a class="menuItem" href="Sign-up.html">Sign Up</a>
+                  </div>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="../Pages/about 1.html">About</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="btn-group" >
+          <button type="button" class="d-none d-md-block btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img width="15px" height="15px" src="../assets/Images/Download.png"> BUY PLAN
+          </button>
+          <div class="dropdown-menu" style="background-color:#3786c6;">
+            <a class="dropdown-item" href="../Pages/basic.html" style="color:black;" >Basic</a>
+            <a class="dropdown-item" href="../Pages/standard.html" style="color:black;">Standard</a>
+            <a class="dropdown-item" href="premium.html" style="color: black;">Premium</a>
+            <!-- Add more dropdown options as needed -->
+          </div>
+        </div>
+        
+
+          </nav>
+            <body>
+                <div class="curator-container" style="width:100%;">
+                    <h2 style="color: white;text-align: left;margin-left: -200px;">GAMER CULT CURATORS</h2>
+                    <p style="color: white;text-align: left;margin-left: -200px;"> FOLLOW GC CURATORS TO DISCOVER MORE GREAT GAMES</p>
+                    <div class="curator-recommendations" style="width: 1600px;margin-left: -165px;">
+                      <div class="curator-card" style="width: 1600px;margin-left: -200px;background-color: #000000;color: white;">
+                        <h3>FOLLOW GC CURATORS TO DISCOVER MORE <br>GREAT GAMES</h3>
+                        
+                        <a href="#" class="follow-btn" style="margin-left: 600px;width: 500px;height: 100px; background: linear-gradient(to right, #66c0f4, #fff);text-align: center;padding-top: 35px;font-size: 21px;"><span style="text-decoration: none;">Follow More Curators</span></a>
+                        <p style="margin-top: -95px;">By following one or more GC Curator, you’ll find their recommendations appear<br> right on your GC home page, on genre pages, and on this page here.When you <br>visit the store page through a Curator recommendation, you’ll see what they have to<br> say. Plus, if the Curator has included a link to a video review, we’ll show that video <br>
+                            right within GC.</p>
+                            <p>When you visit the store page through a Curator recommendation, you’ll see what<br> they have to say. Plus, if the Curator has included a link to a video review, we’ll show <br>that video right within GC.</p>
+                      </div>
+                      <!-- Repeat the above div for additional curators -->
+                    </div>
+                  </div>
+            </body>

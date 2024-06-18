@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../assets\home-stylesheet.css">
+        <link href="https://fonts.cdnfonts.com/css/wicked-steam" rel="stylesheet">
+        <link rel="icon" type="image/png" href="../assets/Images/souled.png" style="width: 150%;">       
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+          @import url('https://fonts.cdnfonts.com/css/wicked-steam');
+          body{
+             background-color:black
+          }
+          .content{
+            
+            margin-top: -350px;
+            border: 5px;
+           
+            background-color: linear-gradient(to right, #1b2838, #0a5e77);
+            margin-left: 350px;
+            margin-right: 350px;
+          }
+          .content h1{
+            font-size: 50px;
+            color: white;
+            text-align: left;
+          
+          }
+          .queue_page_desc {
+    font-size: 16px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    color: rgb(196, 196, 196);
+    
+}
+
+div {
+    display: block;
+}
+.queue-container {
+  display: flex;
+ 
+  padding: 20px;
+  gap: 20px;
+  margin-left: 320px;
+}
+.queue-item {
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.queue-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.queue-item:hover {
+  transform: scale(1.1);
+}
+.queue-container {
+  display: flex;
+  
+  padding: 20px;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.queue-item {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-top: 100px;
+  z-index: 1;
+}
+
+.queue-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.queue-item-top {
+  z-index: 3;
+}
+
+.queue-item-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  z-index: 2;
+}
+
+.queue-item-group .queue-item:first-child {
+  margin-top: 0;
+}
+
+
+
+.queue-item:hover {
+  transform: scale(1.1) translateY(-50px);
+  z-index: 4;
+}
+.queue-item-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.queue-item:hover .queue-item-text {
+  opacity: 1;
+}
+</style>
+
+      </head>
+        
+      <nav class="d-flex navbar navbar-expand-md darkNav navbar-dark">
+        <!-- Toggler/collapsibe Button -->
+        <!-- <span class="d-md-none d-block" style="cursor:pointer" onclick="openNav()"><img width="30px" height="30px" src="https://icon-library.com/images/hamburger-menu-icon-png-white/hamburger-menu-icon-png-white-10.jpg"></span> -->
+
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img width="30px" height="30px" src="https://icon-library.com/images/hamburger-menu-icon-png-white/hamburger-menu-icon-png-white-10.jpg"></a>
+          <div class="overlay-content">
+            <ul class="navbar-nav pl-4 pt-1">
+              <li class="nav-item dropdown">
+                  <a class="nav-link" href="../pages/home.html" data-toggle="dropdown">
+                    Store
+                  </a>
+                  <div style="background-color:black" class="dropdown-menu">
+                    <a class="menuItem" href="../pages/home.html">Home</a>
+                    <a class="menuItem" href="../pages/discoveryqueue.html">Discovery Queue</a>
+                    <a class="menuItem" href="../pages/wishlist.html">Wishlist</a>
+                    <a class="menuItem" href="../pages/home.html">Points Shop</a>
+                    <a class="menuItem" href="../pages/news.html">News</a>
+                    <a class="menuItem" href="../pages/stats.html">Jersey</a>
+                  </div>
+                </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="../pages/home.html">Support</a>
+                </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="../pages/home.html">Account</a>
+
+                <div style="background-color:black" class="dropdown-menu">
+                  <a class="menuItem" href="../index.html">Login</a>
+                  <a class="menuItem" href="Sign-up.html">Sign Up</a>
+                </div>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+    <div class="mx-auto bg">
+        <a class="float-left" href="Home.html"><img
+            class="logoBig" src="../assets/Images/souled (1).png" style="width: 150px; position: relative; left: -150px; top: 3px; right: 20px;"></a>
+        
+        <!--Navbar-->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar" style="position: relative; left: 300px;">
+          <ul class="navbar-nav pt-1">
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="../pages/home.html" data-toggle="dropdown">
+                  Store
+                </a>
+                <div style="background-color:black" class="dropdown-menu">
+                  <a class="menuItem" href="../pages/home.html">Home</a>
+                  <a class="menuItem" href="../pages/discoveryqueue.html">Discovery Queue</a>
+                  <a class="menuItem" href="../pages/wishlist.html">Wishlist</a>
+                  <a class="menuItem" href="../pages/home.html">Points Shop</a>
+                  <a class="menuItem" href="../pages/news.html">News</a>
+                  <a class="menuItem" href="../pages/stats.html">Jersey</a>
+                </div>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../Pages/support.html">Support</a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="../pages/home.html">Account</a>
+
+              <div style="background-color:black" class="dropdown-menu">
+                <a class="menuItem" href="../index.html">Login</a>
+                <a class="menuItem" href="Sign-up.html">Sign Up</a>
+              </div>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="../Pages/about 1.html">About</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+    <div class="btn-group">
+      <button type="button" class="d-none d-md-block btn btn-primary btn-disabled dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img width="20px" height="20px" src="../assets/Images/user-profile-circle.png" style="margin-top: -3px; margin-right: 7px;">Profile
+      </button>
+      <div class="dropdown-menu" style="background-color:#3786c6;  margin-top: 5px; width: fit-content;margin-left: -40px;max-width: 50px;">
+          <a class="dropdown-item" href="../Pages/siddprofile.html" style="color:black;">View My Profile</a>
+          <a class="dropdown-item" href="../Pages/rkaccount.html" style="color:black;">Account Details</a>
+          <a class="dropdown-item" href="../pages/home.html" style="color: black;">Signout</a>
+          <!-- Add more dropdown options as needed -->
+      </div>
+  </div>
+  
+    
+
+      </nav>
+
+          <body style="background-color: radial-gradient(farthest-corner at 40px 40px,#3D4450 0%, #23262E 80%); width: fit-content; height: fit-content; overflow-x: hidden;  font-family: 'Wicked Steam', sans-serif;">
+            <div class="bg">
+              <div class="video-container" style="justify-content: center;">
+                  
+      
+                
+      
+                  <div 
+                   class="caption">
+                      <img style="width: 40%; height: 40%; visibility: hidden;" src="../assets/Images/Sale.png" id="Sale">
+                  </div>
+              </div>
+      
+            </div>
+            <div class="content">
+                <h1>Your Discovery Queue</h1>
+            </div>
+            <div class="queue-container" style="margin-top: -50px;">
+                <div class="queue-item queue-item-top">
+                  <a href="../Pages/mu.html">
+                    <img src="../assets/Images/manunited.jpeg" alt="Image 1">
+                    <div class="queue-item-text"><p>MANCHESTER UNITED</p></div>
+                  </a>
+                </div>
+                <div class="queue-item">
+                  <a href="../Pages/fcb.html">
+                    <img src="../assets/Images/fcbarcelona.jpg" alt="Image 2">
+                    <div class="queue-item-text"><p>FC BARCELONA</p></div>
+                  </a>
+                </div>
+                <div class="queue-item">
+                  <a href="../Pages/CSK.html">
+                    <img src="../assets/Images/csk.jpg" alt="Image 3">
+                    <div class="queue-item-text"><p>CHENNAI SUPER KINGS </p></div>
+                  </a>
+                </div>
+                <div class="queue-item">
+                  <a href="../Pages/crazyfast.html">
+                    <img src="../assets/Images/addidas3.jpg" alt="Image 4">
+                    <div class="queue-item-text"><p>ADDIDAS X MESSI</p></div>
+                  </a>
+                </div>
+              </div>
+             
+             
+            </body>

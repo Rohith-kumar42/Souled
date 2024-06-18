@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OTP Verification</title>
+</head>
+<body>
+    <h2>Enter OTP:</h2>
+    <form action="verify_otp.php" method="post">
+        <label for="otp">OTP:</label>
+        <input type="text" id="otp" name="otp" required>
+        <button type="submit">Verify OTP</button>
+    </form>
+    
+    <!-- Display area for OTP verification result -->
+    <div id="verificationResult"></div>
+</body>
+</html>
+<script>
+    // Function to handle form submission and display verification result
+    function verifyOTP() {
+        // Retrieve the form data
+        var otp = document.getElementById("otp").value;
+
+        // Create an AJAX request to submit the form data to the PHP script
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == XMLHttpRequest.DONE) {
+                // Update the content of the verificationResult div with the response from the PHP script
+                document.getElementById("verificationResult").innerHTML = xhr.responseText;
+            }
+        };
+        xhr.open("POST", "verify_otp.php", true);
+        xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhr.send("otp=" + otp);
+
+        // Prevent the default form submission
+        return false;
+    }
+</script>
