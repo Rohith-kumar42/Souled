@@ -1,0 +1,3 @@
+1. user authentication ---- rk gmail rk home page open/////
+2. get username from db and display it in webpage/////
+3.authentication for accesing game link.
