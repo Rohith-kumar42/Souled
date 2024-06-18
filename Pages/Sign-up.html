@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../assets/signup-stylesheet.css">
+        <link rel="icon" type="image/png" href="../assets/Images/souled.png" style="width: 150%;"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="../assets/signup.js"></script>
+        <nav class="d-flex navbar navbar-expand-md darkNav navbar-dark">
+            
+          <div class="mx-auto bg">
+            <img class="logoBig" src="../assets/Images/souled (1).png" style="position: relative; left: 80px;width:160px">            
+        </div>
+  
+          <button type="button" style="margin-left: 1350px;border-top: -10px;background-color: #28a745;height: 107;width: 37.6;" class="d-none d-md-block btn btn-success" data-target="#">
+              <img width="15px" height="15px" src="https://img.icons8.com/material-sharp/256/download--v1.png">Install GC</button>
+  
+            </nav>
+    </head>
+
+    <body id="transparentBG" style="background-image: url(../assets/background.jpg);overflow-x: hidden;" class="fade-in">
+      
+  
+        <form name="myForm" id="SignupForm" action="Home.html" method="post" onsubmit="return validateForm()" style="width: 40%; margin-top: 5%;margin-left: 410px;background-color: #000000;border: none;" class="container fade-in">
+          <div class="container" style="text-align: center;">
+            <img src="../assets/Images/souled (1).png" >
+          </div>
+        
+         
+            <div class="container smallFont" style="background-color: #000000;">
+              <form name="myForm" onsubmit="return validateForm()" style="background-color: #000000;"> 
+                  <label for="username"><b>Username</b></label>
+                  <input style="background-color: #e8f0fe; height: 45px;" type="text" placeholder="Enter Username" name="username" id="username">
+                  <span id="error1" style="color: red; font-weight: bold;"></span><br>
+          
+                  <label for="email"><b>Email</b></label>
+                  <input style="background-color: #e8f0fe; height: 45px;" type="text" placeholder="Enter Email" name="email" id="email">
+                  <span id="error2" style="color: red; font-weight: bold;"></span><br>
+          
+                  <label for="phone"><b>Phone</b></label>
+                  <input style="background-color: #e8f0fe; height: 45px;" type="text" placeholder="Enter Phone"  name="phone" id="phone">
+                  <span id="error3" style="color: red; font-weight: bold;"></span><br>
+          
+                  <label for="password"><b>Password</b></label>
+                  <input style="background-color:#e8f0fe; height: 45px;" type="password" placeholder="Enter Password" name="password" id="password">
+                  <span id="error4" style="color: red; font-weight: bold;"></span><br>
+          
+                  <button type="submit" class="smallFont btn btn-primary btn-disabled" style="display: block; width: 25%; margin-left: 37%; margin-top: 2%; height: 50px; background-image: linear-gradient(to right, #3786c6 , #223e87);">
+                      <span style="color: whitesmoke; font-weight: 600;">Sign Up</span>
+                  </button>
+          
+                  <!-- Clear button -->
+                  <button type="button" class="btn-danger smallFont" style="display: block; width: 25%; margin-left: 37%; margin-top: 2%; height: 50px; background-image: linear-gradient(to right, #df1b1b, #ba3030);" onclick="clearInput()">
+                    <span style="color: whitesmoke; font-weight: 600;">Clear</span>
+                </button>
+                
+              </form>
+          </div>
+          
+
+    </body>
+    <br><br><br><br><br<br><br><br>
+    
+    
+        
+    
+      </div>
+</html>
