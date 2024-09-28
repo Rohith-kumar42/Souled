@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/login-stylesheet.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="icon" type="image/png" href="./assets/Images/souled.png" style="width: 150%;">
+        <script src="assets/login.js"></script>
+    </head>
+
+    <body id="transparentBG" style="background-color: #1b2838; overflow-x: hidden;" class="fade-in">
+        <img style="position: absolute;background-position:cover;width:105%;height:900px" src="assets/background.jpg">
+        <form name="myForm" id="loginForm" onsubmit="return errormessage()" action="Pages/stats.html"  method="post" class="container smallFont fade-in" style="margin-top:250px">
+            <div>
+                <label for="uname"><b>Sign in with account name</b></label>
+                <input type="text" name="username" placeholder="Enter Username" id="uname">
+                <span id="error1"></span>
+            </div>
+            <div>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" name="password" placeholder="Enter Password" id="psw">
+                <span id="error"></span>
+            </div>
+            <div style="text-align: center;">
+                <button type="submit">
+                    <span style="color: whitesmoke;">Login</span>
+                </button>
+                <br>
+                <label class="smallFont"><a href="./Pages/Sign-up.html">Not Registered?</a></label>
+                <br>
+                <label class="smallFont"><a href="./Register/register.html">Forgot Password?</a></label>
+            </div>
+            <div id="errorMessage" style="color:white; margin-top: 10px;font: size 35px;"></div>
+        </form>
+    </body>
+</html>
