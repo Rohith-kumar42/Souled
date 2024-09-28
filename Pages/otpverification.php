@@ -13,20 +13,20 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
         <script src="../assets/checkout-js.js"></script>
 
-        <nav class="d-flex navbar navbar-expand-md darkNav navbar-dark">
+        <nav  style="backgorund-color:#000000">
             
-        <div class="mx-auto bg">
+        <div class="mx-auto bg" style="border: bottom 0.25px solid white;height:60px">
             <a href="home.html"><img
-                class="logoBig" src="../assets/Images/souled (1).png"></a>            
+                class="logoBig" src="../assets/Images/souled (1).png" style="backgorund-color:#000000;margin-left:690px"></a>            
         </div>
 
 
           </nav>
     
 </head>
-<body id="transparentBG" style="background-color: #1b2838;">
+<body id="transparentBG" style="background-color: #000000;">
    
-    <form action="verifyotp.php" method="post" style="width:700px;margin-left:450px;margin-top:100px;padding:50px">
+    <form action="verifyotp.php" method="post" style="width:700px;margin-left:450px;margin-top:100px;padding:50px;background-color:#000;border:1px solid white">
     <label ><b style="color:white;margin-left:20px;padding-top:80px">Recipient Email</b></label>
             <input style="background-color: #e8f0fe;" type="text" placeholder="Enter Recipient Email" name="email" required>
         

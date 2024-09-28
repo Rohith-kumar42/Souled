@@ -68,9 +68,6 @@ $conn->close();
                       <div style="background-color:black" class="dropdown-menu">
                         <a class="menuItem" href="home.html">Home</a>
                         <a class="menuItem" href="../pages/discoveryqueue.html">Discovery Queue</a>
-                        <a class="menuItem" href="../pages/wishlist.html">Wishlist</a>
-                        <a class="menuItem" href="../pages/home.html">Points Shop</a>
-                        <a class="menuItem" href="../pages/news.html">News</a>
                         <a class="menuItem" href="../pages/stats.html">Jersey</a>
                       </div>
                     </li>
@@ -87,7 +84,7 @@ $conn->close();
                   </li>
                   
                   <li class="nav-item">
-                    <a class="nav-link" href="../About/about.html">About</a>
+                    <a class="nav-link" href="cart.php">Cart</a>
                   </li>
                 </ul>
               </div>
@@ -109,9 +106,6 @@ $conn->close();
                     <div style="background-color:black" class="dropdown-menu">
                       <a class="menuItem" href="../pages/home.html">Home</a>
                       <a class="menuItem" href="../pages/discoveryqueue.html">Discovery Queue</a>
-                      <a class="menuItem" href="../pages/wishlist.html">Wishlist</a>
-                      <a class="menuItem" href="../pages/home.html">Points Shop</a>
-                      <a class="menuItem" href="../pages/news.html">News</a>
                       <a class="menuItem" href="../pages/stats.html">Jersey</a>
                     </div>
                   </li>
@@ -128,7 +122,7 @@ $conn->close();
                 </li>
                 
                 <li class="nav-item">
-                  <a class="nav-link" href="../About/about.html">About</a>
+                  <a class="nav-link" href="cart.php">Cart</a>
                 </li>
               </ul>
             </div>
@@ -141,12 +135,12 @@ $conn->close();
 
         <div class="container" style="color:white;margin-top:0px;margin-left:500px">
         <video autoplay muted loop id="myVideo" class="img-fluid" style="z-index: -1;height: 500px;width:1000px;margin-left:-200px">
-                <source src="../assets/Videos/shot.mp4" type="video/mp4">
+                <source src="../assets/Videos/billanimation.mp4" type="video/mp4">
               </video>
             <h2 style="margin-left:100px">Your Product will be Shipped To:</h2>
             <p style="text-align:center;margin-left:-500px"><?php echo $shippingAddress; ?></p>
-            <button href="bill1.php" id="btn1">Cash on Delivery</button>
-            <button style="margin-left:350px" id="btn2">Pay with Card/UPI</button>
+            <button href="bill1.php" class="btn btn-primary btn-active" id="btn1" style="padding: 7px;">Cash on Delivery</button>
+            <button style="margin-left:350px"  class="btn btn-primary btn-active" id="btn2">Pay with Card/UPI</button>
         </div>
     </body>
     <script>

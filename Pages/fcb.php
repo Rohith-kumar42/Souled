@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 }
 
 // SQL query to fetch data from the table
-$sql = "SELECT size, count FROM fcbhome";
+$sql = "SELECT size, count FROM cskhome";
 $result = $conn->query($sql);
 
 // Create an associative array to store the sizes and their counts
@@ -27,17 +27,17 @@ if ($result->num_rows > 0) {
 } else {
     echo "0 results";
 }
-$quantity = $_POST['quantity'];
-
+$quantity = isset($_POST['quantity']) ? $_POST['quantity'] : '';
+$selectedSize = isset($_POST['size']) ? $_POST['size'] : '';
 // Insert the quantity value into the database table
-$sql = "INSERT INTO quantity (quantity) VALUES ('$quantity')";
+$sql = "INSERT INTO quantity (size,quantity) VALUES ('$selectedSize','$quantity')";
 if ($conn->query($sql) === TRUE) {
   // echo "Quantity inserted successfully";
 } else {
   echo "Error inserting quantity: " . $conn->error;
 }
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['size']) && isset($_POST['quantity'])) {
-    $selectedSize = $_POST['size'];
+
     $quantity = $_POST['quantity'];
 
     // Update the count value in the table based on the selected size
@@ -63,7 +63,17 @@ if ($result->num_rows > 0) {
 } else {
     // echo "0 results";
 }
-   
+$Jerseyname = "FC BARCELONA HOME KIT 2023-2024";
+$page_url = "fcb.php";
+
+  // Save the size and quantity to the cart table
+ $sql2 = "INSERT INTO cart (name, size, quantity,price,page_url) VALUES ('$Jerseyname', '$selectedSize', '$quantity',7500*$quantity,'$page_url')";
+  ;
+  if ($conn->query($sql2) === TRUE) {
+    // echo "Size and quantity saved to cart successfully";
+  } else {
+    echo "Error saving size and quantity to cart: " . $conn->error;
+  }  
 
 // Close the connection
 $conn->close();
@@ -118,7 +128,7 @@ $conn->close();
                   </li>
                   
                   <li class="nav-item">
-                    <a class="nav-link" href="../About/about.html">About</a>
+                    <a class="nav-link" href="cart.php">Cart</a>
                   </li>
                 </ul>
               </div>
@@ -140,9 +150,7 @@ $conn->close();
                     <div style="background-color:black" class="dropdown-menu">
                       <a class="menuItem" href="../pages/home.html">Home</a>
                       <a class="menuItem" href="../pages/discoveryqueue.html">Discovery Queue</a>
-                      <a class="menuItem" href="../pages/wishlist.html">Wishlist</a>
-                      <a class="menuItem" href="../pages/home.html">Points Shop</a>
-                      <a class="menuItem" href="../pages/news.html">News</a>
+                      
                       <a class="menuItem" href="../pages/stats.html">Jersey</a>
                     </div>
                   </li>
@@ -159,7 +167,7 @@ $conn->close();
                 </li>
                 
                 <li class="nav-item">
-                  <a class="nav-link" href="../About/about.html">About</a>
+                <a class="nav-link" href="cart.php">Cart</a>
                 </li>
               </ul>
             </div>
@@ -286,7 +294,7 @@ $conn->close();
                     <span style="color: #c5d3de; position: relative; top: 8px; padding-right: 12px;">₹7500 RUP</span>
 
                 <div id="btn-buy" style="float: right;">
-                    <a href="../Pages/otpverification.php">
+                    <a href="../Pages/checkout1.php">
                       <button type="button" class="btn btn-primary active"><span>Buy Jersey</span></button>
                     </a>
                 </div>

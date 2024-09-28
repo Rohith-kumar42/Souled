@@ -250,7 +250,7 @@ body{
                     <a class="nav-link" href="../pages/home">Account</a>
   
                     <div style="background-color:black" class="dropdown-menu">
-                      <a class="menuItem" href="../index.html">Login</a>
+                      <a class="menuItem" href="../log1.php">Login</a>
                       <a class="menuItem" href="Sign-up.html">Sign Up</a>
                     </div>
                   </li>
@@ -289,13 +289,13 @@ body{
                   <a class="nav-link" href="../pages/home">Account</a>
 
                   <div style="background-color:black" class="dropdown-menu">
-                    <a class="menuItem" href="../index.html">Login</a>
+                    <a class="menuItem" href="../log1.php">Login</a>
                     <a class="menuItem" href="Sign-up.html">Sign Up</a>
                   </div>
                 </li>
                 
                 <li class="nav-item">
-                  <a class="nav-link" href="../Pages/about 1.html">About</a>
+                  <a class="nav-link" href="../Pages/cart.php">About</a>
                 </li>
               </ul>
             </div>

@@ -99,7 +99,7 @@ if(isset($_POST['email'])) {
     <?php if (!empty($otp)) : ?>
        
     <?php endif; ?>
-    <a href="checkout1.php" style="text-decoration:none;"><button type="submit" class="smallFont" style="display: block;width: 25%; margin-left: 37%;height: 50px ;background-image: linear-gradient(to right, #3786c6 , #223e87);margin-top:-500px">
+    <a href="otpverify1.php" style="text-decoration:none;"><button type="submit" class="smallFont" style="display: block;width: 25%; margin-left: 37%;height: 50px ;background-image: linear-gradient(to right, #3786c6 , #223e87);margin-top:-500px">
                 <span style="color: whitesmoke; font-weight: 600;">GO TO CHECKOUT</span>
             </button></a>
 </body>

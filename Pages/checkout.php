@@ -1,28 +1,50 @@
 <?php
-// Replace 'your_email@example.com' with the actual email address
-$expectedEmail = 'rohithkumarcbaalraj@gmail.com';
-$expectedCode = '123456'; // Change this to the expected verification code
+// Database credentials
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "jersey";
 
-// Check if form data is submitted and not empty
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email']) && isset($_POST['code'])) {
-    // Retrieve form data
-    $email = $_POST['email'];
-    $code = $_POST['code'];
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-    // Check if the email and code match the expected values
-    if ($email === $expectedEmail && $code === $expectedCode) {
-        // Redirect to another page if the code is correct
-        header('Location: https://transfer.us.c2.synology.com/transfer/6dCnTqijvNdBwMS3/p23ZuzOGAQSMKxPR/v2#WNDYhAe5I9qkdQoKdNVGV5oPCZfu6FaawTln05ywYCQ');
-        exit();
-    } else {
-        // Display an error message if the code is incorrect
-        echo "Incorrect verification code.";
-    }
-} else {
-    // Display an error message if form data is not submitted
-    echo "Form submission error.";
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
+
+// SQL query to fetch data from the table
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $email = $_POST["email"];
+  $password = $_POST["code"];
+  $cardHolderName = $_POST["card_holder_name"];
+  $cardNumber = $_POST["card_number"];
+  $shippingAddress = $_POST["address"];
+ 
+
+ 
+  
+
+  // SQL query to insert data into the table
+  $sql2 = "INSERT INTO checkout (email, password, card_holder_name, card_number,shipping_address,product_value)
+  VALUES ('$email', '$password', '$cardHolderName', '$cardNumber', '$shippingAddress','$product_value')";
+
+  if ($conn->query($sql2) === TRUE) {
+    // Redirect the user to a success page or perform any other action
+    header("Location: otpverify.php");
+    exit();
+  } else {
+    echo "Error inserting data: " . $conn->error;
+  }
+}
+
+
+
+// Close the connection
+$conn->close();
 ?>
+
 
 <!DOCTYPE html>
 <html>
@@ -37,61 +59,60 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email']) && isset($_PO
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
         <script src="../assets/checkout-js.js"></script>
 
-        <nav class="d-flex navbar navbar-expand-md darkNav navbar-dark">
+        <nav class="d-flex navbar navbar-expand-md darkNav navbar-dark" style="background-color:black">
             
         <div class="mx-auto bg">
-            <a href="home.html"><img
-                class="logoBig" src="../assets/Images/souled (1).png"></a>            
+            <a href="home.html"><img class="logoBig" src="../assets/Images/souled (1).png" style="width: 150px;height:70px"></a>            
         </div>
 
 
           </nav>
     </head>
 
-    <body id="transparentBG" style="background-color: #1b2838;">
+    <body id="transparentBG" style="background-color: #00000;">
       
-        <img style="position: absolute; width: 800px; height:700px;visibility: hidden;" src="../../ImageData/games.jpg">
+        <img style="position: absolute; width: 800px; height:700px;visibility: hidden;" >
   
         
-        <form id="checkoutForm" action="verification1.php"  style="width: 40%; margin-top: 5%;" class="container fade-in">
+        <form method="post" id="checkoutForm" action="checkout.php"  style="width: 40%; margin-top: 5%;background-color:black" class="container fade-in">
           <div class="container" style="text-align: center;">
             <img src="../assets/Images/souled (1).png">
           </div>
-        
+
           <div class="container smallFont">
             <label ><b>Recipient Email</b></label>
             <input style="background-color: #e8f0fe;" type="text" placeholder="Enter Recipient Email" name="email" required>
-        
+
             <label><b>Confirm Your Password</b></label>
             <input style="background-color:#e8f0fe;" type="password" placeholder="Enter Password" name="code" required>
             <br><label ><b>Credit Card info</b></label>
             <br> 
             <label ><b>Name on card</b></label>
-            <input style="background-color: #e8f0fe;" type="text" placeholder="Enter Card holder name" required>
+            <input style="background-color: #e8f0fe;" type="text" placeholder="Enter Card holder name" name="card_holder_name" required>
 
             <label ><b>Card Number</b></label>
-            <input style="background-color: #e8f0fe;" type="text" placeholder="1234-4567-8910-1234" required>
+            <input style="background-color: #e8f0fe;" type="text" placeholder="1234-4567-8910-1234" name="card_number" required>
 
-            <label ><b>Security number CCV:</b></label>
-            <input style="background-color: #e8f0fe;" type="text" placeholder="CCV/CVV" required>
+            <!-- <label for="verification_code">Verification Code:</label>
+            <input type="text" id="code" name="vcode" required><br><br> -->
+            <label>Shipping Address</label>
+            <input type="text" name="address" required><br><br>
+          
 
-            <label ><b>Discount Code:</b></label>
-            <input style="background-color: #e8f0fe;" type="text" placeholder="CCV/CVV">
-
-            <label for="code">Verification Code:</label>
-        <input type="text" id="code" name="code" required><br><br>
-        
-            <h2 style="color: whitesmoke;">Product: EAFC24</h2>
-            <p style="color: whitesmoke;">Total: ₹2000 RUP</p>
+          <div class="container">
             
-            <button type="submit" class="smallFont" style="display: block;width: 25%; margin-left: 37%; margin-top:2%;height: 50px ;background-image: linear-gradient(to right, #3786c6 , #223e87);;">
-             <a href="https://transfer.us.c2.synology.com/transfer/6dCnTqijvNdBwMS3/p23ZuzOGAQSMKxPR/v2#WNDYhAe5I9qkdQoKdNVGV5oPCZfu6FaawTln05ywYCQ"> <span style="color: whitesmoke; font-weight: 600;">Checkout</span></a></button>
-              <button style="width: 25%; margin-left: 37%; margin-top:2%;height: 50px; background-image: linear-gradient(to right, #df1b1b, #ba3030);" 
-            type="button" class="cancelbtn smallFont" onclick=clearInput()><span style="color: whitesmoke; font-weight: 600;">Clear</span></button></button>
-            <label>
+          </div>
+       
+           
+            <button type="submit" class="smallFont btn btn-primary btn-disabled" style="display: block;width: 25%; margin-left: 37%; margin-top:2%;height: 50px;border:1px solid white">
+             <a href="otpverify.php"> <span style="color: whitesmoke; font-weight: 600;">Checkout</span></a></button>
+              <button style="width: 25%; margin-left: 37%; margin-top:2%;height: 50px; background-image: linear-gradient(to right, #df1b1b, #ba3030);border:1px solid white" 
+            type="button" class="btn btn-danger smallFont" onclick=clearInput()><span style="color: whitesmoke; font-weight: 600;">Clear</span></button></button>
+            <label >
                 <br>
-              <input type="checkbox" checked="checked" name="remember"> Remember info for next purchase
+              <input type="checkbox" checked="checked" name="remember" > <span style="color:white">Remember info for next purchase<span>
             </label>
+          
           </div>
         
           <div class="container">
@@ -100,4 +121,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email']) && isset($_PO
         </form>
 
     </body>
+    <script>
+    var quantity = document.getElementsByName("quantity")[0].value;
+    // Get the value from the quantity input field
+
 </html>

@@ -27,12 +27,13 @@ if ($result->num_rows > 0) {
 } else {
     echo "0 results";
 }
-$sql1 = "SELECT quantity FROM quantity ORDER BY id DESC LIMIT 1";
+$sql1 = "SELECT quantity,size FROM quantity ORDER BY id DESC LIMIT 1";
 $result1 = $conn->query($sql1);
 
 if ($result1->num_rows > 0) {
   while ($row = $result1->fetch_assoc()) {
     $quantity = $row["quantity"];
+    $size1= $row["size"];
   }
 } else {
   // echo "0 results";
@@ -44,18 +45,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $cardNumber = $_POST["card_number"];
   $shippingAddress = $_POST["address"];
   $product_value = $quantity * 7500;
-  $number1 = $_POST["number1"];
+
 
  
   
 
   // SQL query to insert data into the table
-  $sql2 = "INSERT INTO checkout (email, password, card_holder_name, card_number,shipping_address,product_value,productchoosed)
-  VALUES ('$email', '$password', '$cardHolderName', '$cardNumber', '$shippingAddress','$product_value','$number1')";
+  $sql2 = "INSERT INTO checkout (email, password, card_holder_name, card_number,shipping_address,product_value)
+  VALUES ('$email', '$password', '$cardHolderName', '$cardNumber', '$shippingAddress','$product_value')";
 
   if ($conn->query($sql2) === TRUE) {
     // Redirect the user to a success page or perform any other action
-    header("Location: otpverify.php");
+    header("Location: otpverification1.php");
     exit();
   } else {
     echo "Error inserting data: " . $conn->error;
@@ -121,20 +122,12 @@ $conn->close();
             <label>Shipping Address</label>
             <input type="text" name="address" required><br><br>
             <div>
-                <h3 style="color: white;margin-left: 10px;">Select SIZE</h3>
-                <select name="size" style="padding: 10px;width: 100px;border-radius: 10%;margin-left: 10px;background-color: white;border-bottom:14px solid red;border: 2px solid red;">
-                  <option value="S">S <?php echo isset($sizes['S']) ? $sizes['S'] : '0'; ?></option>
-                  <option value="M">M <?php echo isset($sizes['M']) ? $sizes['M'] : '0'; ?></option>
-                  <option value="L">L <?php echo isset($sizes['L']) ? $sizes['L'] : '0'; ?></option>
-                  <option value="XL">XL <?php echo isset($sizes['XL']) ? $sizes['XL'] : '0'; ?></option>
-                  <option value="XXL">XXL <?php echo isset($sizes['XXL']) ? $sizes['XXL'] : '0'; ?></option>
-                </select>
-            </div><br>
-            <br>
-            <label for="quantity" style="color:white">Quantity:</label>
-            <p style="color:white"><?php echo isset($quantity) ? $quantity : ''; ?></p>
-            <p>Total Number of prducts Selected</p>
-           <input type="number" style="width:100px" name="number1" id="number1" required value="0"> 
+                <h3 style="color: white;margin-left: 10px;">Selected SIZE</h3>
+                <h2 style="color:white;text-transform:uppercase;padding-left:7px"><?php echo isset($size1) ? $size1 : '';  ?></h2>
+            </div>
+            <label for="quantity" style="color:white;padding-top:-100px;padding-left:7px">Quantity:</label>
+            <p style="color:white;padding-left:7px"><?php echo isset($quantity) ? $quantity : ''; ?></p>
+
           </div>
 
           <div class="container">
@@ -145,7 +138,7 @@ $conn->close();
             <p style="color: whitesmoke;" id="product_value" name="product_value">Total: ₹<?php echo isset($quantity) ? $quantity * 7500 : ''; ?> RUP</p> 
             
             <button type="submit" class="smallFont btn btn-primary btn-disabled" style="display: block;width: 25%; margin-left: 37%; margin-top:2%;height: 50px;border:1px solid white">
-             <a href="bill.php"> <span style="color: whitesmoke; font-weight: 600;">Checkout</span></a></button>
+             <a href="otpverification1.php"> <span style="color: whitesmoke; font-weight: 600;">Checkout</span></a></button>
               <button style="width: 25%; margin-left: 37%; margin-top:2%;height: 50px; background-image: linear-gradient(to right, #df1b1b, #ba3030);border:1px solid white" 
             type="button" class="btn btn-danger smallFont" onclick=clearInput()><span style="color: whitesmoke; font-weight: 600;">Clear</span></button></button>
             <label >

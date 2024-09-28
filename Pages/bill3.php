@@ -26,7 +26,7 @@ if ($result) {
             $cardHolderName = $row["card_holder_name"];
             $cardNumber = $row["card_number"];
             $shippingAddress = $row["shipping_address"];
-            $price = $row["product_value"];
+            
         }
     } else {
         // No results found
@@ -36,8 +36,12 @@ if ($result) {
     // Query failed
     die("Query failed: " . $conn->error);
 }
+$sql1 = "SELECT * FROM cart";
+$result1 = $conn->query($sql1);
+$result = $conn->query($sql1);
 
-// Close connection
+
+
 $conn->close();
 ?>
 
@@ -65,6 +69,10 @@ $conn->close();
          }
          table, th, td {
   border: 1px solid white;
+  color:white;
+}
+td{
+  text-transform:uppercase;
 }
           </style>
         </head>
@@ -84,9 +92,6 @@ $conn->close();
                       <div style="background-color:black" class="dropdown-menu">
                         <a class="menuItem" href="home.html">Home</a>
                         <a class="menuItem" href="../pages/discoveryqueue.html">Discovery Queue</a>
-                        <a class="menuItem" href="../pages/wishlist.html">Wishlist</a>
-                        <a class="menuItem" href="../pages/home.html">Points Shop</a>
-                        <a class="menuItem" href="../pages/news.html">News</a>
                         <a class="menuItem" href="../pages/stats.html">Jersey</a>
                       </div>
                     </li>
@@ -103,7 +108,7 @@ $conn->close();
                   </li>
                   
                   <li class="nav-item">
-                    <a class="nav-link" href="../About/about.html">About</a>
+                    <a class="nav-link" href="cart.php">Cart</a>
                   </li>
                 </ul>
               </div>
@@ -125,9 +130,6 @@ $conn->close();
                     <div style="background-color:black" class="dropdown-menu">
                       <a class="menuItem" href="../pages/home.html">Home</a>
                       <a class="menuItem" href="../pages/discoveryqueue.html">Discovery Queue</a>
-                      <a class="menuItem" href="../pages/wishlist.html">Wishlist</a>
-                      <a class="menuItem" href="../pages/home.html">Points Shop</a>
-                      <a class="menuItem" href="../pages/news.html">News</a>
                       <a class="menuItem" href="../pages/stats.html">Jersey</a>
                     </div>
                   </li>
@@ -144,7 +146,7 @@ $conn->close();
                 </li>
                 
                 <li class="nav-item">
-                  <a class="nav-link" href="../About/about.html">About</a>
+                  <a class="nav-link" href="cart.php">Cart</a>
                 </li>
               </ul>
             </div>
@@ -169,7 +171,7 @@ $conn->close();
     <input type="text" value="<?php echo htmlspecialchars($email);?>" style="width:250px;background-color:transparent;color:white;border:none;"><br><br>
     <input type="text" value="<?php echo htmlspecialchars($cardHolderName);?>" style="width:250px;background-color:transparent;color:white;border:none;"><br><br>
     <input type="text" value="<?php echo htmlspecialchars($shippingAddress);?>" style="width:250px;background-color:transparent;color:white;border:none;"><br><br>
-    <input type="text" value="<?php echo htmlspecialchars($price);?>" style="width:250px;background-color:transparent;color:white;border:none;"><br><br>
+    <!-- <input type="text" value="<?php echo htmlspecialchars($price);?>" style="width:250px;background-color:transparent;color:white;border:none;"><br><br> -->
 </form><br>
 <table style="border:1px solid white;margin-left:150px;border-collapse:collapse" id="myTable">
 <tr>
@@ -179,14 +181,37 @@ $conn->close();
     <th style="text-align:center;width:100px">Total</th>
 </tr>
 <tr>
-  <td style="text-align:center">FC BARCELONA HOME JERSEY</td>
-  <td style="text-align:center">₹<?php echo htmlspecialchars($price);?></td>
-  <td style="text-align:center"><?php echo htmlspecialchars($price)/7500;?></td>
-  <td style="text-align:center">₹<?php echo htmlspecialchars($price);?></td>
+<?php
+            // Display the retrieved data in the table
+            if ($result) {
+              if ($result->num_rows > 0) {
+                $totalprice=0;
+          
+                while ($row = $result->fetch_assoc()) {
+                  
+                    // Display the data for odd index
+                    echo "<tr>";
+                    echo "<td>" . $row["name"] . "</td>";
+                    echo "<td>" . $row["size"] . "</td>";
+                    echo "<td>" . $row["quantity"] . "</td>";
+                    echo "<td>" . $row["price"] . "</td>";
+                    echo "</tr>";  
+                    
+                  
+                    $totalprice+=$row['price'];
+                 
+                }
+              } else {
+                echo "<tr><td colspan='6'>No items in the cart.</td></tr>";
+              }
+            } 
+              ?>
 </table>
 <br><br>
+
 <p style="margin-left:800px">Total</p>
-<p  style="width:250px;background-color:transparent;color:white;border:none;margin-left:900px;margin-top:-39.50px"><?php echo htmlspecialchars($price);?></p><br><br>
+<p  style="width:250px;background-color:transparent;color:white;border:none;margin-left:900px;margin-top:-39.50px"><?php echo $totalprice ?></p><br><br>
+
     <button id="downloadBtn" class="btn btn-primary btn-disabled" style="margin-left:820px">Download BILL AS IMAGE</button><br><br>
 
 </div>  

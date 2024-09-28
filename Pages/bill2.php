@@ -17,6 +17,8 @@ if ($conn->connect_error) {
 $sql = "SELECT * FROM checkout ORDER BY id DESC LIMIT 1";
 $result = $conn->query($sql);
 
+
+
 // Check if query was successful
 if ($result) {
     if ($result->num_rows > 0) {
@@ -36,7 +38,9 @@ if ($result) {
     // Query failed
     die("Query failed: " . $conn->error);
 }
-
+$sql1 = "SELECT * FROM cart";
+$result1 = $conn->query($sql1);
+$result = $conn->query($sql1);
 // Close connection
 $conn->close();
 ?>
@@ -69,9 +73,6 @@ $conn->close();
                       <div style="background-color:black" class="dropdown-menu">
                         <a class="menuItem" href="home.html">Home</a>
                         <a class="menuItem" href="../pages/discoveryqueue.html">Discovery Queue</a>
-                        <a class="menuItem" href="../pages/wishlist.html">Wishlist</a>
-                        <a class="menuItem" href="../pages/home.html">Points Shop</a>
-                        <a class="menuItem" href="../pages/news.html">News</a>
                         <a class="menuItem" href="../pages/stats.html">Jersey</a>
                       </div>
                     </li>
@@ -110,9 +111,7 @@ $conn->close();
                     <div style="background-color:black" class="dropdown-menu">
                       <a class="menuItem" href="../pages/home.html">Home</a>
                       <a class="menuItem" href="../pages/discoveryqueue.html">Discovery Queue</a>
-                      <a class="menuItem" href="../pages/wishlist.html">Wishlist</a>
-                      <a class="menuItem" href="../pages/home.html">Points Shop</a>
-                      <a class="menuItem" href="../pages/news.html">News</a>
+                      
                       <a class="menuItem" href="../pages/stats.html">Jersey</a>
                     </div>
                   </li>
@@ -142,11 +141,42 @@ $conn->close();
 
         <div class="container" style="color:white;margin-top:0px;margin-left:500px">
        <img src="../assets/images/GooglePay_QR.png" style="height:300px;width:300px;margin-top:100px;margin-left: 100px;"><br>
+       <table style="border:1px solid white;margin-left:150px;border-collapse:collapse" id="myTable">
+<!-- <tr>
+    <th style="width:500px;text-align:center">Description</th>
+    <th style="text-align:center;width:100px">Price</th>
+    <th style="text-align:center;width:100px">Quantity</th>
+    <th style="text-align:center;width:100px">Total</th>
+</tr> -->
+<tr>
+<?php
+           if ($result1) {
+            if ($result1->num_rows > 0) {
+             
+              $totalprice=0;
+              while ($row = $result1->fetch_assoc()) {
+                
+                  // Display the data for odd index
+                  // echo "<tr>";
+                  // echo "<td>" . $row["name"] . "</td>";
+                  // echo "<td>" . $row["size"] . "</td>";
+                  // echo "<td>" . $row["quantity"] . "</td>";
+                   "<td>" . $row["price"] . "</td>";
+                  echo "</tr>";
+                  $totalprice+=$row['price'];
+               
+              }
+            } else {
+              echo "<tr><td colspan='4'>No items in the cart.</td></tr>";
+            }
+          } 
+            ?>
+</table>
 
-       <p style="margin-left:155px;margin-top:10px">Pay the amount of Rs. <?php echo $price; ?></p>
+       <p style="margin-left:155px;margin-top:10px">Pay the amount of Rs. <?php echo $totalprice; ?></p>
        <br>
   
-       <button id="btn3" class="btn btn-primary" style="margin-left: 150px;">Proceed to Bill</button>
+       <button id="btn3" class="btn btn-primary" style="margin-left: 190px;">Proceed to Bill</button>
         </div>
     </body>
     <script>

@@ -47,7 +47,7 @@ $conn->close();
           @import url('https://fonts.cdnfonts.com/css/wicked-steam');
           body{
             font-family: 'Wicked Steam', sans-serif;
-            background-color: #1b2838;
+            background-color: #000;
           }
           .welcome_header_ctn {
     background: url(https://community.akamai.steamstatic.com/public/images//bg_highlight.png);
@@ -162,7 +162,7 @@ h1 {
 .btn_green_white_innerfade > span {
     border-radius: 2px;
     display: block;
-    background: #799905;
+    background: #000;
     background: -webkit-linear-gradient( top, #799905 5%, #536904 95%);
     background: linear-gradient( to bottom, #799905 5%, #536904 95%);
 }
@@ -174,13 +174,13 @@ h1 {
     cursor: pointer;
     text-decoration: none !important;
     color: #D2E885 !important;
-    background: #a4d007;
-    background: -webkit-linear-gradient( top, #a4d007 5%, #536904 95%);
-    background: linear-gradient( to bottom, #a4d007 5%, #536904 95%);
+    background: #000;
+    background: -webkit-linear-gradient( top, #000 5%, #000 95%);
+    background: linear-gradient( to bottom, #000 5%, #000 95%);
 }
   
 body.apphub_blue {
-    background: #1b2838;
+    background: #000;
     color: #636363;
 }
 li {
@@ -226,7 +226,7 @@ body{
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
   margin-left: 420px;
   margin-top: -30px;
-  background-color: #1b2838;
+  background-color: #000;
 }
 
 .wallet-balance, .view-licenses, .store-preferences {
@@ -383,7 +383,7 @@ body{
                     <a class="nav-link" href="../pages/homed.html">Account</a>
   
                     <div style="background-color:black" class="dropdown-menu">
-                      <a class="menuItem" href="../index.html">Login</a>
+                      <a class="menuItem" href="../log1.php">Login</a>
                       <a class="menuItem" href="Sign-up.html">Sign Up</a>
                     </div>
                   </li>
@@ -422,13 +422,13 @@ body{
                   <a class="nav-link" href="../pages/homed.html">Account</a>
 
                   <div style="background-color:black" class="dropdown-menu">
-                    <a class="menuItem" href="../index.html">Login</a>
+                    <a class="menuItem" href="../log1.php">Login</a>
                     <a class="menuItem" href="Sign-up.html">Sign Up</a>
                   </div>
                 </li>
                 
                 <li class="nav-item">
-                  <a class="nav-link" href="../Pages/about 1.html">About</a>
+                  <a class="nav-link" href="../Pages/cart.php">About</a>
                 </li>
               </ul>
             </div>
@@ -450,24 +450,23 @@ body{
         
 
           </nav>
-          <div 
-          class="caption">
+          <div  class="caption" style="margin-top:300px"> 
              <img style="width: 40%; height: 40%; visibility: hidden;" src="../assets/Images/Sale.png" id="Sale">
          </div>
      </div>
 
-     <div id="main" style="position: relative;" class="container-fluid">
+     <div id="main" style="position: relative;background-color:#000">
        <!--  -->
-       <div class="welcome_header_ctn">
-        <div class="welcome_header">
+       <div class="welcome_header_ctn" style="background-color:#000">
+        <div class="welcome_header"  style="background-color: #000;">
             <div id="hello"> <?php echo htmlspecialchars($lastUsername); ?>.</div>
-            <div id="subHead">Welcome to The GC Community</div>
+            <div id="subHead">Welcome to The Souled Community</div>
         </div>
     </div>
 
     <div class="settings-menu">
         <ul>
-          <li><a href="../pages/Home.html" style="background: linear-gradient(to right, #223D5A, transparent)" class="nav_item active">Account details</a></li>
+          <li><a href="../pages/Home.html" style="background-color:black" >Account details</a></li>
      
         </ul>
       </div>
@@ -495,7 +494,7 @@ body{
         <ul>
           <li>
             <p>Manage Email Preferences</p>
-            <p>Email address:  <?php echo htmlspecialchars($lastUsername); ?>@gmail.com<span style="color: white;"></span></p>
+            <p>Email address:  <?php echo htmlspecialchars($lastUsername); ?><span style="color: white;"></span></p>
             <p>Status: <span style="color: white;">Verified</span></p>
           </li>
           <li>
