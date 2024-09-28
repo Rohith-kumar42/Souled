@@ -37,9 +37,9 @@ $conn->close();
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../assets\home-stylesheet.css">
+    <link rel="stylesheet" href="./assets\home-stylesheet.css">
     <link href="https://fonts.cdnfonts.com/css/wicked-steam" rel="stylesheet">
-    <link rel="icon" type="image/png" href="../assets/Images/souled.png" style="width: 150%;">       
+    <link rel="icon" type="image/png" href="./assets/Images/souled.png" style="width: 150%;">       
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -108,25 +108,25 @@ $conn->close();
               Store
             </a>
             <div style="background-color:black" class="dropdown-menu">
-              <a class="menuItem" href="../Pages/home.html">Home</a>
-              <a class="menuItem" href="../pages/discoveryqueue.html">Discovery Queue</a>
-              <a class="menuItem" href="../pages/stats.html">Jersey</a>
+              <a class="menuItem" href="./Pages/home.html">Home</a>
+              <a class="menuItem" href="./pages/discoveryqueue.html">Discovery Queue</a>
+              <a class="menuItem" href="./pages/stats.html">Jersey</a>
             </div>
           </li>
         <li class="nav-item">
-            <a class="nav-link" href="../Pages/support.html">Support</a>
+            <a class="nav-link" href="./Pages/support.html">Support</a>
           </li>
         <li class="nav-item dropdown">
           <a class="nav-link" >Account</a>
 
           <div style="background-color:black" class="dropdown-menu">
-            <a class="menuItem" href="../log1.php">Login</a>
+            <a class="menuItem" href="./log1.php">Login</a>
             <a class="menuItem" href="Sign-up.html">Sign Up</a>
           </div>
         </li>
         
         <li class="nav-item">
-          <a class="nav-link" href="../Pages/cart.php">About</a>
+          <a class="nav-link" href="./Pages/cart.php">About</a>
         </li>
       </ul>
     </div>
@@ -140,9 +140,9 @@ $conn->close();
 
 </div>
   <div class="dropdown-menu" style="background-color:#3786c6;  margin-top: 5px; width: fit-content;margin-left: -40px;max-width: 50px;">
-      <a class="dropdown-item" href="../Pages/user.php" style="color:black;">View My Profile</a>
-      <a class="dropdown-item" href="../Pages/useraccount.php" style="color:black;">Account Details</a>
-      <a class="dropdown-item" href="../pages/home.html" style="color: black;">Signout</a>
+      <a class="dropdown-item" href="./Pages/user.php" style="color:black;">View My Profile</a>
+      <a class="dropdown-item" href="./Pages/useraccount.php" style="color:black;">Account Details</a>
+      <a class="dropdown-item" href="./pages/home.html" style="color: black;">Signout</a>
       <!-- Add more dropdown options as needed -->
   </div>
 </div>

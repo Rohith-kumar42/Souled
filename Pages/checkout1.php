@@ -75,18 +75,18 @@ $conn->close();
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../assets/checkout-stylesheet.css">
-        <link rel="icon" type="image/png" href="../assets/Images/souled.png" style="width: 150%;"> 
+        <link rel="stylesheet" href="./assets/checkout-stylesheet.css">
+        <link rel="icon" type="image/png" href="./assets/Images/souled.png" style="width: 150%;"> 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="../assets/checkout-js.js"></script>
+        <script src="./assets/checkout-js.js"></script>
 
         <nav class="d-flex navbar navbar-expand-md darkNav navbar-dark" style="background-color:black">
             
         <div class="mx-auto bg">
-            <a href="home.html"><img class="logoBig" src="../assets/Images/souled (1).png" style="width: 150px;height:70px"></a>            
+            <a href="home.html"><img class="logoBig" src="./assets/Images/souled (1).png" style="width: 150px;height:70px"></a>            
         </div>
 
 
@@ -100,7 +100,7 @@ $conn->close();
         
         <form method="post" id="checkoutForm" action="checkout1.php"  style="width: 40%; margin-top: 5%;background-color:black" class="container fade-in">
           <div class="container" style="text-align: center;">
-            <img src="../assets/Images/souled (1).png">
+            <img src="./assets/Images/souled (1).png">
           </div>
 
           <div class="container smallFont">

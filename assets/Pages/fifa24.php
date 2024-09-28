@@ -3,13 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../assets/product-stylesheet.css">
-        <link rel="icon" type="image/png" href="../assets/Images/souled.png" style="width: 150%;"> 
+        <link rel="stylesheet" href="./assets/product-stylesheet.css">
+        <link rel="icon" type="image/png" href="./assets/Images/souled.png" style="width: 150%;"> 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script><script src="product-js.js"></script>
-         <script src="../assets/product-js.js"></script>
+         <script src="./assets/product-js.js"></script>
 
         <nav class="d-flex navbar navbar-expand-md darkNav navbar-dark">
             <!-- Toggler/collapsibe Button -->
@@ -20,32 +20,32 @@
               <div class="overlay-content">
                 <ul class="navbar-nav pl-4 pt-1">
                   <li class="nav-item dropdown">
-                      <a class="nav-link" href="../pages/home.html" data-toggle="dropdown">
+                      <a class="nav-link" href="./pages/home.html" data-toggle="dropdown">
                         Store
                       </a>
                       <div style="background-color:black" class="dropdown-menu">
                         <a class="menuItem" href="home.html">Home</a>
-                        <a class="menuItem" href="../pages/discoveryqueue.html">Discovery Queue</a>
-                        <a class="menuItem" href="../pages/wishlist.html">Wishlist</a>
-                        <a class="menuItem" href="../pages/home.html">Points Shop</a>
-                        <a class="menuItem" href="../pages/news.html">News</a>
-                        <a class="menuItem" href="../pages/stats.html">Jersey</a>
+                        <a class="menuItem" href="./pages/discoveryqueue.html">Discovery Queue</a>
+                        <a class="menuItem" href="./pages/wishlist.html">Wishlist</a>
+                        <a class="menuItem" href="./pages/home.html">Points Shop</a>
+                        <a class="menuItem" href="./pages/news.html">News</a>
+                        <a class="menuItem" href="./pages/stats.html">Jersey</a>
                       </div>
                     </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="../pages/home.html">Support</a>
+                      <a class="nav-link" href="./pages/home.html">Support</a>
                     </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link" href="../pages/home.html">Account</a>
+                    <a class="nav-link" href="./pages/home.html">Account</a>
   
                     <div style="background-color:black" class="dropdown-menu">
-                      <a class="menuItem" href="../pages/home.html">Login</a>
-                      <a class="menuItem" href="../pages/home.html">Sign Up</a>
+                      <a class="menuItem" href="./pages/home.html">Login</a>
+                      <a class="menuItem" href="./pages/home.html">Sign Up</a>
                     </div>
                   </li>
                   
                   <li class="nav-item">
-                    <a class="nav-link" href="../About/about.html">About</a>
+                    <a class="nav-link" href="./About/about.html">About</a>
                   </li>
                 </ul>
               </div>
@@ -55,38 +55,38 @@
               </button> -->
         <div class="mx-auto bg">
             <a class="float-left" href="home.html"><img
-                class="logoBig" src="../assets/Images/souled (1).png"></a>
+                class="logoBig" src="./assets/Images/souled (1).png"></a>
             
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
               <ul class="navbar-nav pt-1">
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="../pages/home.html" data-toggle="dropdown">
+                    <a class="nav-link" href="./pages/home.html" data-toggle="dropdown">
                       Store
                     </a>
                     <div style="background-color:black" class="dropdown-menu">
-                      <a class="menuItem" href="../pages/home.html">Home</a>
-                      <a class="menuItem" href="../pages/discoveryqueue.html">Discovery Queue</a>
-                      <a class="menuItem" href="../pages/wishlist.html">Wishlist</a>
-                      <a class="menuItem" href="../pages/home.html">Points Shop</a>
-                      <a class="menuItem" href="../pages/news.html">News</a>
-                      <a class="menuItem" href="../pages/stats.html">Jersey</a>
+                      <a class="menuItem" href="./pages/home.html">Home</a>
+                      <a class="menuItem" href="./pages/discoveryqueue.html">Discovery Queue</a>
+                      <a class="menuItem" href="./pages/wishlist.html">Wishlist</a>
+                      <a class="menuItem" href="./pages/home.html">Points Shop</a>
+                      <a class="menuItem" href="./pages/news.html">News</a>
+                      <a class="menuItem" href="./pages/stats.html">Jersey</a>
                     </div>
                   </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../Pages/support.html">Support</a>
+                    <a class="nav-link" href="./Pages/support.html">Support</a>
                   </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link" href="../pages/home.html">Account</a>
+                  <a class="nav-link" href="./pages/home.html">Account</a>
 
                   <div style="background-color:black" class="dropdown-menu">
-                    <a class="menuItem" href="../index.html">Login</a>
-                    <a class="menuItem" href="../Pages/Sign-up.html">Sign Up</a>
+                    <a class="menuItem" href="./index.html">Login</a>
+                    <a class="menuItem" href="./Pages/Sign-up.html">Sign Up</a>
                   </div>
                 </li>
                 
                 <li class="nav-item">
-                  <a class="nav-link" href="../About/about.html">About</a>
+                  <a class="nav-link" href="./About/about.html">About</a>
                 </li>
               </ul>
             </div>
@@ -104,27 +104,27 @@
 
           <!-- Indicators -->
           <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active" style="background-image: url(../assets/Images/fifac.jpg);"></li>
-            <li data-target="#demo" data-slide-to="1" style="background-image: url(../assets/Images/fifa1.jpg);"></li>
-            <li data-target="#demo" data-slide-to="2" style="background-image: url(../assets/Images/fifa2.jpg);"></li>
-            <li data-target="#demo" data-slide-to="3" style="background-image: url(../assets/Images/fifa3.jpg);"></li>
+            <li data-target="#demo" data-slide-to="0" class="active" style="background-image: url(./assets/Images/fifac.jpg);"></li>
+            <li data-target="#demo" data-slide-to="1" style="background-image: url(./assets/Images/fifa1.jpg);"></li>
+            <li data-target="#demo" data-slide-to="2" style="background-image: url(./assets/Images/fifa2.jpg);"></li>
+            <li data-target="#demo" data-slide-to="3" style="background-image: url(./assets/Images/fifa3.jpg);"></li>
           </ul>
           
           <!-- The slideshow -->
           <div class="carousel-inner">
             <div class="carousel-item active">
                 <video controls autoplay muted id="myVideo" width="100%" height="100%">
-                    <source src="../assets/Videos/EA SPORTS FC 24 _ Official Gameplay Trailer.mp4" type="video/mp4">
+                    <source src="./assets/Videos/EA SPORTS FC 24 _ Official Gameplay Trailer.mp4" type="video/mp4">
                   </video>
             </div>
             <div class="carousel-item">
-              <img src="../assets/Images/fifa1.jpg">
+              <img src="./assets/Images/fifa1.jpg">
             </div>
             <div class="carousel-item">
-              <img src="../assets/Images/fifa2.jpg">
+              <img src="./assets/Images/fifa2.jpg">
             </div>
             <div class="carousel-item">
-                <img src="../assets/Images/fifa3.jpg">
+                <img src="./assets/Images/fifa3.jpg">
               </div>
           </div>
           
@@ -138,7 +138,7 @@
         </div>
 
         <div id="game-highlight" style="display: inline-block; width: 40%; height: 100%; padding-left: 1%;">
-            <img class="game_header_image_full" src="../assets/Images/fifac.jpg"
+            <img class="game_header_image_full" src="./assets/Images/fifac.jpg"
             style="width: 100%;">
             <p class="smallFont">
                 EA SPORTS FC™ 24 welcomes you to The World’s Game: the most true-to-football experience ever with HyperMotionV, PlayStyles optimised by Opta, and an enhanced Frostbite™ Engine.                <p class="tinyFont">
@@ -170,7 +170,7 @@ Electronic Arts
                     <span style="color: #c5d3de; position: relative; top: 8px; padding-right: 12px;">₹2000 RUP</span>
 
                 <div id="btn-buy" style="float: right;">
-                    <a href="../Pages/otpverification.php">
+                    <a href="./Pages/otpverification.php">
                       <button type="button" class="btn btn-success"><span>Buy Game</span></button>
                     </a>
                 </div>

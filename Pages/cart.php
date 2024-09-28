@@ -28,13 +28,13 @@ $result = $conn->query($sql);
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../assets/product-stylesheet.css">
-        <link rel="icon" type="image/png" href="../assets/Images/souled.png" style="width: 150%;"> 
+        <link rel="stylesheet" href="./assets/product-stylesheet.css">
+        <link rel="icon" type="image/png" href="./assets/Images/souled.png" style="width: 150%;"> 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script><script src="product-js.js"></script>
-         <script src="../assets/product-js.js"></script>
+         <script src="./assets/product-js.js"></script>
          <style>
      table, th, td,tr :nth-child(6){
   border: 1px solid white;
@@ -75,24 +75,24 @@ $result = $conn->query($sql);
               <div class="overlay-content">
                 <ul class="navbar-nav pl-4 pt-1">
                   <li class="nav-item dropdown">
-                      <a class="nav-link" href="../pages/home.html" data-toggle="dropdown">
+                      <a class="nav-link" href="./pages/home.html" data-toggle="dropdown">
                         Store
                       </a>
                       <div style="background-color:black" class="dropdown-menu">
                         <a class="menuItem" href="home.html">Home</a>
-                        <a class="menuItem" href="../pages/discoveryqueue.html">Discovery Queue</a>
-                        <a class="menuItem" href="../pages/stats.html">Jersey</a>
+                        <a class="menuItem" href="./pages/discoveryqueue.html">Discovery Queue</a>
+                        <a class="menuItem" href="./pages/stats.html">Jersey</a>
                       </div>
                     </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="../Pages/support.html">Support</a>
+                      <a class="nav-link" href="./Pages/support.html">Support</a>
                     </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link" href="../pages/home.html">Account</a>
+                    <a class="nav-link" href="./pages/home.html">Account</a>
   
                     <div style="background-color:black" class="dropdown-menu">
-                      <a class="menuItem" href="../pages/home.html">Login</a>
-                      <a class="menuItem" href="../pages/home.html">Sign Up</a>
+                      <a class="menuItem" href="./pages/home.html">Login</a>
+                      <a class="menuItem" href="./pages/home.html">Sign Up</a>
                     </div>
                   </li>
                   
@@ -107,7 +107,7 @@ $result = $conn->query($sql);
               </button> -->
         <div class="mx-auto bg" >
             <a class="float-left" href="home.html"><img
-                class="logoBig" src="../assets/Images/souled (1).png" style="border:none;width:100;"></a>
+                class="logoBig" src="./assets/Images/souled (1).png" style="border:none;width:100;"></a>
             
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar" style="background-color:black">
@@ -117,25 +117,25 @@ $result = $conn->query($sql);
                       Store
                     </a>
                     <div style="background-color:black" class="dropdown-menu">
-                      <a class="menuItem" href="../pages/home.html">Home</a>
-                      <a class="menuItem" href="../pages/discoveryqueue.html">Discovery Queue</a>
-                      <a class="menuItem" href="../pages/stats.html">Jersey</a>
+                      <a class="menuItem" href="./pages/home.html">Home</a>
+                      <a class="menuItem" href="./pages/discoveryqueue.html">Discovery Queue</a>
+                      <a class="menuItem" href="./pages/stats.html">Jersey</a>
                     </div>
                   </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../pages/home.html">Support</a>
+                    <a class="nav-link" href="./pages/home.html">Support</a>
                   </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link" href="../pages/home.html">Account</a>
+                  <a class="nav-link" href="./pages/home.html">Account</a>
 
                   <div style="background-color:black" class="dropdown-menu">
-                    <a class="menuItem" href="../pages/home.html">Login</a>
-                    <a class="menuItem" href="../pages/home.html">Sign Up</a>
+                    <a class="menuItem" href="./pages/home.html">Login</a>
+                    <a class="menuItem" href="./pages/home.html">Sign Up</a>
                   </div>
                 </li>
                 
                 <li class="nav-item">
-                  <a class="nav-link" href="../About/cart.php">Cart</a>
+                  <a class="nav-link" href="./About/cart.php">Cart</a>
                 </li>
               </ul>
             </div>
@@ -186,7 +186,7 @@ $result = $conn->query($sql);
         <br>
         <br>
         <div id="btn-buy" style="margin-left:710px">
-                    <a href="../Pages/otpverification.php">
+                    <a href="./Pages/otpverification.php">
                       <button type="button" class="btn btn-primary active"><span >Buy Jersey</span></button>
                     </a>
                 </div>

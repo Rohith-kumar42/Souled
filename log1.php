@@ -46,12 +46,12 @@ $conn->close();
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/login-stylesheet.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <link rel="icon" type="image/png" href="../assets/Images/souled.png" style="width: 150%;"> 
+        <link rel="icon" type="image/png" href="./assets/Images/souled.png" style="width: 150%;"> 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="../assests/login.js"></script>
+        <script src="./assests/login.js"></script>
 
 
         <nav class="d-flex navbar navbar-expand-md darkNav navbar-dark">
@@ -85,9 +85,9 @@ $conn->close();
               <button type="submit">
               <span style="color: whitesmoke;">Login</span></button>
               <br>
-              <label class="smallFont"><a href="../Pages/Sign-up.html">Not Registered?</a></label>
+              <label class="smallFont"><a href="./Pages/Sign-up.html">Not Registered?</a></label>
                 <br>
-              <label class="smallFont"><a href="../Register/register.html">Forgot Password?</a></label>
+              <label class="smallFont"><a href="./Register/register.html">Forgot Password?</a></label>
             </div>
             <div id="errorMessage" style="color:white; margin-top: 10px;font: size 35px;"></div>
 

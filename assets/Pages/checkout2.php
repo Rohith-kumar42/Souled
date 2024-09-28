@@ -5,19 +5,19 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../assets/checkout-stylesheet.css">
-        <link rel="icon" type="image/png" href="../assets/Images/souled.png" style="width: 150%;"> 
+        <link rel="stylesheet" href="./assets/checkout-stylesheet.css">
+        <link rel="icon" type="image/png" href="./assets/Images/souled.png" style="width: 150%;"> 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="../assets/checkout-js.js"></script>
+        <script src="./assets/checkout-js.js"></script>
 
         <nav class="d-flex navbar navbar-expand-md darkNav navbar-dark">
             
         <div class="mx-auto bg">
             <a href="home.html"><img
-                class="logoBig" src="../assets/Images/souled (1).png"></a>            
+                class="logoBig" src="./assets/Images/souled (1).png"></a>            
         </div>
 
 
@@ -26,12 +26,12 @@
 
     <body id="transparentBG" style="background-color: #1b2838;">
       
-        <img style="position: absolute; width: 800px; height:700px;visibility: hidden;" src="../../ImageData/games.jpg">
+        <img style="position: absolute; width: 800px; height:700px;visibility: hidden;" src="././ImageData/games.jpg">
   
         
         <form method="post" id="checkoutForm" action="verification.php"  style="width: 40%; margin-top: 5%;" class="container fade-in">
           <div class="container" style="text-align: center;">
-            <img src="../assets/Images/souled (1).png">
+            <img src="./assets/Images/souled (1).png">
           </div>
         
           <div class="container smallFont">

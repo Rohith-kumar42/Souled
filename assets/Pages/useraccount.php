@@ -36,9 +36,9 @@ $conn->close();
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../assets/home-stylesheet.css">
+        <link rel="stylesheet" href="./assets/home-stylesheet.css">
         <link href="https://fonts.cdnfonts.com/css/wicked-steam" rel="stylesheet">
-        <link rel="icon" type="image/png" href="../assets/Images/souled.png" style="width: 150%;">       
+        <link rel="icon" type="image/png" href="./assets/Images/souled.png" style="width: 150%;">       
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -364,26 +364,26 @@ body{
               <div class="overlay-content">
                 <ul class="navbar-nav pl-4 pt-1">
                   <li class="nav-item dropdown">
-                      <a class="nav-link" href="../pages/homed.html" data-toggle="dropdown">
+                      <a class="nav-link" href="./pages/homed.html" data-toggle="dropdown">
                         Store
                       </a>
                       <div style="background-color:black" class="dropdown-menu">
-                        <a class="menuItem" href="../pages/homed.html">Home</a>
-                        <a class="menuItem" href="../pages/discoveryqueue.html">Discovery Queue</a>
-                        <a class="menuItem" href="../pages/wishlist.html">Wishlist</a>
-                        <a class="menuItem" href="../pages/homed.html">Points Shop</a>
-                        <a class="menuItem" href="../pages/news.html">News</a>
-                        <a class="menuItem" href="../pages/stats.html">Jersey</a>
+                        <a class="menuItem" href="./pages/homed.html">Home</a>
+                        <a class="menuItem" href="./pages/discoveryqueue.html">Discovery Queue</a>
+                        <a class="menuItem" href="./pages/wishlist.html">Wishlist</a>
+                        <a class="menuItem" href="./pages/homed.html">Points Shop</a>
+                        <a class="menuItem" href="./pages/news.html">News</a>
+                        <a class="menuItem" href="./pages/stats.html">Jersey</a>
                       </div>
                     </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="../pages/homed.html">Support</a>
+                      <a class="nav-link" href="./pages/homed.html">Support</a>
                     </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link" href="../pages/homed.html">Account</a>
+                    <a class="nav-link" href="./pages/homed.html">Account</a>
   
                     <div style="background-color:black" class="dropdown-menu">
-                      <a class="menuItem" href="../index.html">Login</a>
+                      <a class="menuItem" href="./index.html">Login</a>
                       <a class="menuItem" href="Sign-up.html">Sign Up</a>
                     </div>
                   </li>
@@ -397,38 +397,38 @@ body{
             
             <div class="mx-auto bg">
             <a class="float-left" href="home.html"><img
-                class="logoBig" src="../assets/Images/souled (1).png" style="width: 150px; position: relative; left: -150px; top: 3px; right: 20px;"></a>
+                class="logoBig" src="./assets/Images/souled (1).png" style="width: 150px; position: relative; left: -150px; top: 3px; right: 20px;"></a>
             
             <!--Navbar-->
             <div class="collapse navbar-collapse" id="collapsibleNavbar" style="position: relative; left: 300px;">
               <ul class="navbar-nav pt-1">
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="../pages/homed.html" data-toggle="dropdown">
+                    <a class="nav-link" href="./pages/homed.html" data-toggle="dropdown">
                       Store
                     </a>
                     <div style="background-color:black" class="dropdown-menu">
-                      <a class="menuItem" href="../pages/homed.html">Home</a>
-                      <a class="menuItem" href="../pages/discoveryqueue.html">Discovery Queue</a>
-                      <a class="menuItem" href="../pages/wishlist.html">Wishlist</a>
-                      <a class="menuItem" href="../pages/homed.html">Points Shop</a>
-                      <a class="menuItem" href="../pages/news.html">News</a>
-                      <a class="menuItem" href="../pages/stats.html">Jersey</a>
+                      <a class="menuItem" href="./pages/homed.html">Home</a>
+                      <a class="menuItem" href="./pages/discoveryqueue.html">Discovery Queue</a>
+                      <a class="menuItem" href="./pages/wishlist.html">Wishlist</a>
+                      <a class="menuItem" href="./pages/homed.html">Points Shop</a>
+                      <a class="menuItem" href="./pages/news.html">News</a>
+                      <a class="menuItem" href="./pages/stats.html">Jersey</a>
                     </div>
                   </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../Pages/support.html">Support</a>
+                    <a class="nav-link" href="./Pages/support.html">Support</a>
                   </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link" href="../pages/homed.html">Account</a>
+                  <a class="nav-link" href="./pages/homed.html">Account</a>
 
                   <div style="background-color:black" class="dropdown-menu">
-                    <a class="menuItem" href="../index.html">Login</a>
+                    <a class="menuItem" href="./index.html">Login</a>
                     <a class="menuItem" href="Sign-up.html">Sign Up</a>
                   </div>
                 </li>
                 
                 <li class="nav-item">
-                  <a class="nav-link" href="../Pages/about 1.html">About</a>
+                  <a class="nav-link" href="./Pages/about 1.html">About</a>
                 </li>
               </ul>
             </div>
@@ -437,11 +437,11 @@ body{
 
         <div class="btn-group">
           <button type="button" class="d-none d-md-block btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img width="20px" height="20px" src="../assets/Images/user-profile-circle.png" style="margin-top: -3px; margin-right: 7px;">Profile
+              <img width="20px" height="20px" src="./assets/Images/user-profile-circle.png" style="margin-top: -3px; margin-right: 7px;">Profile
           </button>
           <div class="dropdown-menu" style="background-color:#3786c6;  margin-top: 5px; width: fit-content;margin-left: -40px;max-width: 50px;">
-              <a class="dropdown-item" href="../Pages/user.php" style="color:black;">View My Profile</a>
-              <a class="dropdown-item" href="../Pages/useraccount.php" style="color:black;background-color: white;">Account Details</a>
+              <a class="dropdown-item" href="./Pages/user.php" style="color:black;">View My Profile</a>
+              <a class="dropdown-item" href="./Pages/useraccount.php" style="color:black;background-color: white;">Account Details</a>
               <a class="dropdown-item" href="Home.html" style="color: black;">Signout</a>
               <!-- Add more dropdown options as needed -->
           </div>
@@ -452,7 +452,7 @@ body{
           </nav>
           <div 
           class="caption">
-             <img style="width: 40%; height: 40%; visibility: hidden;" src="../assets/Images/Sale.png" id="Sale">
+             <img style="width: 40%; height: 40%; visibility: hidden;" src="./assets/Images/Sale.png" id="Sale">
          </div>
      </div>
 
@@ -467,7 +467,7 @@ body{
 
     <div class="settings-menu">
         <ul>
-          <li><a href="../pages/Home.html" style="background: linear-gradient(to right, #223D5A, transparent)" class="nav_item active">Account details</a></li>
+          <li><a href="./pages/Home.html" style="background: linear-gradient(to right, #223D5A, transparent)" class="nav_item active">Account details</a></li>
      
         </ul>
       </div>

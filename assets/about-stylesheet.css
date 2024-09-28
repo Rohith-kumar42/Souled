@@ -204,7 +204,7 @@ a :hover> .sidebar{
 }
 
 #transparentBG{
-    background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(../../ImageData/games.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(././ImageData/games.jpg);
     background-repeat: repeat;
     background-size: contain;
 }

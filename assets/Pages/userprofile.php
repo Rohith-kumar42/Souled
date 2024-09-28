@@ -39,9 +39,9 @@ $conn->close();
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../assets/home-stylesheet.css">
+        <link rel="stylesheet" href="./assets/home-stylesheet.css">
         <link href="https://fonts.cdnfonts.com/css/wicked-steam" rel="stylesheet">
-        <link rel="icon" type="image/png" href="../assets/Images/souled.png" style="width: 150%;">         
+        <link rel="icon" type="image/png" href="./assets/Images/souled.png" style="width: 150%;">         
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -233,26 +233,26 @@ body{
               <div class="overlay-content">
                 <ul class="navbar-nav pl-4 pt-1">
                   <li class="nav-item dropdown">
-                      <a class="nav-link" href="../pages/homeuki.html" data-toggle="dropdown">
+                      <a class="nav-link" href="./pages/homeuki.html" data-toggle="dropdown">
                         Store
                       </a>
                       <div style="background-color:black" class="dropdown-menu">
-                        <a class="menuItem" href="../pages/homeuki.html">Home</a>
-                        <a class="menuItem" href="../pages/discoveryqueue.html">Discovery Queue</a>
-                        <a class="menuItem" href="../pages/wishlist.html">Wishlist</a>
-                        <a class="menuItem" href="../pages/homeuki.html">Points Shop</a>
-                        <a class="menuItem" href="../pages/news.html">News</a>
-                        <a class="menuItem" href="../pages/stats.html">Jersey</a>
+                        <a class="menuItem" href="./pages/homeuki.html">Home</a>
+                        <a class="menuItem" href="./pages/discoveryqueue.html">Discovery Queue</a>
+                        <a class="menuItem" href="./pages/wishlist.html">Wishlist</a>
+                        <a class="menuItem" href="./pages/homeuki.html">Points Shop</a>
+                        <a class="menuItem" href="./pages/news.html">News</a>
+                        <a class="menuItem" href="./pages/stats.html">Jersey</a>
                       </div>
                     </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="../pages/homeuki.html">Support</a>
+                      <a class="nav-link" href="./pages/homeuki.html">Support</a>
                     </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link" href="../pages/homeuki.html">Account</a>
+                    <a class="nav-link" href="./pages/homeuki.html">Account</a>
   
                     <div style="background-color:black" class="dropdown-menu">
-                      <a class="menuItem" href="../index.html">Login</a>
+                      <a class="menuItem" href="./index.html">Login</a>
                       <a class="menuItem" href="Sign-up.html">Sign Up</a>
                     </div>
                   </li>
@@ -266,38 +266,38 @@ body{
             
             <div class="mx-auto bg">
             <a class="float-left" href="homeuki.html"><img
-                class="logoBig" src="../assets/Images/souled (1).png" style="width: 150px; position: relative; left: -150px; top: 3px; right: 20px;"></a>
+                class="logoBig" src="./assets/Images/souled (1).png" style="width: 150px; position: relative; left: -150px; top: 3px; right: 20px;"></a>
             
             <!--Navbar-->
             <div class="collapse navbar-collapse" id="collapsibleNavbar" style="position: relative; left: 300px;">
               <ul class="navbar-nav pt-1">
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="../pages/homeuki.html" data-toggle="dropdown">
+                    <a class="nav-link" href="./pages/homeuki.html" data-toggle="dropdown">
                       Store
                     </a>
                     <div style="background-color:black" class="dropdown-menu">
-                      <a class="menuItem" href="../pages/homeuki.html">Home</a>
-                      <a class="menuItem" href="../pages/discoveryqueue.html">Discovery Queue</a>
-                      <a class="menuItem" href="../pages/wishlist.html">Wishlist</a>
-                      <a class="menuItem" href="../pages/homeuki.html">Points Shop</a>
-                      <a class="menuItem" href="../pages/news.html">News</a>
-                      <a class="menuItem" href="../pages/stats.html">Jersey</a>
+                      <a class="menuItem" href="./pages/homeuki.html">Home</a>
+                      <a class="menuItem" href="./pages/discoveryqueue.html">Discovery Queue</a>
+                      <a class="menuItem" href="./pages/wishlist.html">Wishlist</a>
+                      <a class="menuItem" href="./pages/homeuki.html">Points Shop</a>
+                      <a class="menuItem" href="./pages/news.html">News</a>
+                      <a class="menuItem" href="./pages/stats.html">Jersey</a>
                     </div>
                   </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../Pages/support.html">Support</a>
+                    <a class="nav-link" href="./Pages/support.html">Support</a>
                   </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link" href="../pages/homeuki.html">Account</a>
+                  <a class="nav-link" href="./pages/homeuki.html">Account</a>
 
                   <div style="background-color:black" class="dropdown-menu">
-                    <a class="menuItem" href="../index.html">Login</a>
+                    <a class="menuItem" href="./index.html">Login</a>
                     <a class="menuItem" href="Sign-up.html">Sign Up</a>
                   </div>
                 </li>
                 
                 <li class="nav-item">
-                  <a class="nav-link" href="../Pages/about 1.html">About</a>
+                  <a class="nav-link" href="./Pages/about 1.html">About</a>
                 </li>
               </ul>
             </div>
@@ -306,11 +306,11 @@ body{
 
         <div class="btn-group">
           <button type="button" class="d-none d-md-block btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img width="20px" height="20px" src="../assets/Images/user-profile-circle.png" style="margin-top: -3px; margin-right: 7px;">Profile
+              <img width="20px" height="20px" src="./assets/Images/user-profile-circle.png" style="margin-top: -3px; margin-right: 7px;">Profile
           </button>
           <div class="dropdown-menu" style="background-color:#3786c6;  margin-top: 5px; width: fit-content;margin-left: -40px;max-width: 50px;">
-              <a class="dropdown-item" href="../Pages/ukiprofile.html" style="color:black;background-color: white;">View My Profile</a>
-              <a class="dropdown-item" href="../Pages/ukiaccount.html" style="color:black;">Account Details</a>
+              <a class="dropdown-item" href="./Pages/ukiprofile.html" style="color:black;background-color: white;">View My Profile</a>
+              <a class="dropdown-item" href="./Pages/ukiaccount.html" style="color:black;">Account Details</a>
               <a class="dropdown-item" href="Home.html" style="color: black;">Signout</a>
               <!-- Add more dropdown options as needed -->
           </div>
@@ -321,63 +321,63 @@ body{
           </nav>
           <div 
           class="caption">
-             <img style="width: 40%; height: 40%; visibility: hidden;" src="../assets/Images/Sale.png" id="Sale">
+             <img style="width: 40%; height: 40%; visibility: hidden;" src="./assets/Images/Sale.png" id="Sale">
          </div>
      </div>
 
      <div id="main" style="position: relative;" class="container-fluid">
        <div class="sidebar d-none d-xl-block" style="padding-right: 10px;">
-         <img src="../assets/Images/giftcard.png" width="250px">
+         <img src="./assets/Images/giftcard.png" width="250px">
          <h5>GIFT CARDS</h5>
-         <a href="../pages/homeuki.html">Now Available on GC</a>
+         <a href="./pages/homeuki.html">Now Available on GC</a>
          <h5>RECOMMENDED</h5>
-         <a href="../pages/homeuki.html">By Friends</a>
+         <a href="./pages/homeuki.html">By Friends</a>
          <br>
-         <a href="../pages/homeuki.html">By Curators</a>
+         <a href="./pages/homeuki.html">By Curators</a>
          <br>
-         <a href="../pages/homeuki.html">Tags</a>
+         <a href="./pages/homeuki.html">Tags</a>
          <br>
          <h5>DISCOVERY QUEUES</h5>
-         <a href="../pages/homeuki.html">Recommendations</a>
+         <a href="./pages/homeuki.html">Recommendations</a>
          <br>
-         <a href="../pages/homeuki.html">New Releases</a>
+         <a href="./pages/homeuki.html">New Releases</a>
          <br>
          <h5>BROWSE CATEGORIES</h5>
-         <a href="../pages/homeuki.html">Top Sellers</a>
+         <a href="./pages/homeuki.html">Top Sellers</a>
          <br>
-         <a href="../pages/homeuki.html">Recently Updated</a>
+         <a href="./pages/homeuki.html">Recently Updated</a>
          <br>
-         <a href="../pages/homeuki.html">New Releases</a>
+         <a href="./pages/homeuki.html">New Releases</a>
          <br>
-         <a href="../pages/homeuki.html">Upcoming</a>
+         <a href="./pages/homeuki.html">Upcoming</a>
          <br>
-         <a href="../pages/homeuki.html">Specials</a>
+         <a href="./pages/homeuki.html">Specials</a>
          <br>
-         <a href="../pages/homeuki.html">Virtual Reality</a>
+         <a href="./pages/homeuki.html">Virtual Reality</a>
          <br>
-         <a href="../pages/homeuki.html">Steam Controller Friendly</a>
+         <a href="./pages/homeuki.html">Steam Controller Friendly</a>
          <h5>BROWSE BY GENRE</h5>
-         <a href="../pages/homeuki.html">Free to Play</a>
+         <a href="./pages/homeuki.html">Free to Play</a>
          <br>
-         <a href="../pages/homeuki.html">Early Access</a>
+         <a href="./pages/homeuki.html">Early Access</a>
          <br>
          <a href="">Action</a>
          <br>
-         <a href="../pages/homeuki.html">Adventure</a>
+         <a href="./pages/homeuki.html">Adventure</a>
          <br>
-         <a href="../pages/homeuki.html">Casual</a>
+         <a href="./pages/homeuki.html">Casual</a>
          <br>
-         <a href="../pages/homeuki.html">Indie</a>
+         <a href="./pages/homeuki.html">Indie</a>
          <br>
-         <a href="../pages/homeuki.html">Massively Multiplayer</a>
+         <a href="./pages/homeuki.html">Massively Multiplayer</a>
          <br>
-         <a href="../pages/homeuki.html">Racing</a>
+         <a href="./pages/homeuki.html">Racing</a>
          <h5>RECENTLY VIEWED</h5>
-         <a href="../pages/homeuki.html">Apex Legends</a>
+         <a href="./pages/homeuki.html">Apex Legends</a>
          <br>
-         <a href="../pages/homeuki.html">CSGO</a>
+         <a href="./pages/homeuki.html">CSGO</a>
          <br>
-         <a href="../pages/homeuki.html">Destiny: 2</a>
+         <a href="./pages/homeuki.html">Destiny: 2</a>
        </div>
        <div class="welcome_header_ctn">
         <div class="welcome_header">
@@ -404,11 +404,11 @@ body{
         <div class="Info_break"><img src="https://community.akamai.steamstatic.com/public/images//skin_1/1px_welcome.gif" height="1"></div>
         <h1 style="margin-top: -20px;">First, click this attractive button.</h1>
         <div id="btn" style="margin-top: 15px;">
-            <a href="../index.html" class="btn_green_white_innerfade btn_border_2px btn_medium" previewlistener="true"><span>Setup GC Profile</span></a>
+            <a href="./index.html" class="btn_green_white_innerfade btn_border_2px btn_medium" previewlistener="true"><span>Setup GC Profile</span></a>
             
         </div>
         <br>
-        <div class="Info_break"><img src="../assets/Images/1px_welcome.gif" height="1"></div>
+        <div class="Info_break"><img src="./assets/Images/1px_welcome.gif" height="1"></div>
         <h1 style="margin-top: -30px;">And then...</h1>
         <ul>
             <li>Create a personalized profile</li>
